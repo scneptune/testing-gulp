@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.less","components/component-foo.less"],"names":[],"mappings":"AAKA;EACC,UAAA;;AAGD;ECRA,WAAA","file":"main.css","sourcesContent":["// test main file for less\n\n\n@colormain: red;\n\n.block-red {\n\tcolor: @colormain;\n}\n\n.block-blue {\n\t@import 'components/component-foo.less';\n}","\ncolor: blue;"],"sourceRoot":"/source/"}

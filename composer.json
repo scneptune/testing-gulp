@@ -1,0 +1,69 @@
+{
+    "name": "cherimedia/hiphopdx",
+    "description": "HipHopDX",
+    "version" : "2.2.2",
+    "repositories": [
+        {
+          "type": "package",
+          "package": {
+                "name" : "cherimedia/objects",
+                "version": "dev-master",
+                "source" : {
+                    "type" : "git",
+                    "url": "git@github.com:CheriMedia/objects.git",
+                    "reference" : "master"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Cheri\\": "Cheri/"
+                    }
+                }
+            }
+        },
+        {
+          "type": "package",
+          "package": {
+                "name" : "cherimedia/frame",
+                "version": "dev-master",
+                "source" : {
+                    "type" : "git",
+                    "url": "git@github.com:CheriMedia/frame.git",
+                    "reference" : "master"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Cheri\\": "Cheri/"
+                    }
+                }
+            }
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "dev-master",
+        "klein/klein": "dev-master",
+        "predis/predis": "1.1.*@dev",
+        "airbrake/airbrake-php": "dev-master",
+        "suin/php-rss-writer": "dev-master",
+        "vlucas/phpdotenv": "dev-master",
+        "essence/essence": "2.5.2",
+        "php-objects/query-builder": "dev-master",
+        "foolz/sphinxql-query-builder":"dev-master",
+        "j7mbo/twitter-api-php": "dev-master",
+        "squizlabs/php_codesniffer": "1.*",
+        "cherimedia/frame": "dev-master",
+        "cherimedia/objects": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cheri\\": "library/Cheri/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Ornelas",
+            "email": "daniel@cherimedia.com"
+        }
+    ],
+    "minimum-stability": "beta"
+}
